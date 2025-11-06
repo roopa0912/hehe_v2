@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    font-family: 'DM Sans', sans-serif;
+    color: #e4e4e7;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 450px;
+    width: 100%;
+}
+
+.header {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 300;
+    color: #ffd89b;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+}
+
+.subtitle {
+    font-size: 0.9em;
+    color: #a1a1aa;
+    font-weight: 300;
+}
+
+.content {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 24px;
+    padding: 35px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    margin-bottom: 30px;
+}
+
+.message {
+    line-height: 1.8;
+    font-size: 1.05em;
+    font-weight: 300;
+    margin-bottom: 25px;
+    color: #d4d4d8;
+}
+
+.message:last-child {
+    margin-bottom: 0;
+}
+
+.highlight {
+    color: #ffd89b;
+    font-weight: 400;
+}
+
+.game-container {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 24px;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.game-title {
+    font-size: 0.85em;
+    color: #a1a1aa;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.game-canvas {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    width: 100%;
+    aspect-ratio: 1;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    display: block;
+}
+
+.score {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Space Mono', monospace;
+    color: #ffd89b;
+    font-size: 1.1em;
+}
+
+.instructions {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.85em;
+    color: #71717a;
+}
+
+.clear-message {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.95em;
+    color: #ffd89b;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.clear-message.show {
+    opacity: 1;
+}
+
+.emoji {
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.signature {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 0.95em;
+    color: #a1a1aa;
+    font-style: italic;
+}
+
+@media (max-width: 480px) {
+    .content {
+        padding: 25px;
+    }
+    
+    h1 {
+        font-size: 1.75em;
+    }
+}
